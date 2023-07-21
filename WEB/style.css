@@ -12,15 +12,17 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 100vh;
-    background: url('background.jpg') no repeat;
+    background: url('background3.jpg') no-repeat;
+    background-size: 130%;
+    background-position: center;
 }
+
 header {
-    position: 0;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +44,23 @@ header {
     margin-left: 40px;
 }
 
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
 .navigation a::after {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -54,6 +71,21 @@ header {
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .5s;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
 }
 
 .navigation a:hover::after {
@@ -81,3 +113,11 @@ header {
     color: #162938;
 }
 
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+}
